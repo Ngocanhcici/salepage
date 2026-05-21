@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="docTitle">Bài viết - F5 Hormone</title>
+<meta name="description" id="docDesc" content="Đọc bài viết chuyên sâu về hormone và sức khỏe nội tiết từ Ngọc Anh Coach."/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.post-hero { padding: 8rem 0 3rem; background: var(--cream-dark); }
+.post-hero-inner { max-width: 780px; margin: 0 auto; text-align: center; }
+.post-hero h1 { font-size: clamp(1.75rem, 3.5vw, 2.75rem); line-height: 1.3; }
+.post-hero-meta { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.post-hero-meta span { display: flex; align-items: center; gap: 0.5rem; color: var(--muted); font-size: 0.88rem; }
+
+.post-layout { display: grid; grid-template-columns: 1fr 280px; gap: 4rem; padding: 4rem 0 6rem; align-items: start; }
+.post-content { max-width: 100%; }
+.post-content h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; color: var(--charcoal); }
+.post-content h3 { font-size: 1.2rem; margin: 2rem 0 0.75rem; color: var(--green); }
+.post-content p { margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8; color: var(--charcoal); }
+.post-content ul, .post-content ol { margin: 1rem 0 1.5rem 1.5rem; }
+.post-content li { margin-bottom: 0.5rem; font-size: 1.05rem; line-height: 1.7; }
+.post-content blockquote { border-left: 4px solid var(--green); padding: 1rem 1.5rem; background: var(--green-light); border-radius: 0 12px 12px 0; margin: 2rem 0; font-style: italic; color: var(--charcoal); }
+
+.post-sidebar { position: sticky; top: 100px; }
+.sidebar-widget { background: var(--white); border-radius: 20px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid var(--green-light); }
+.sidebar-widget h3 { font-size: 0.95rem; margin-bottom: 1rem; }
+
+.back-link { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 600; margin-bottom: 2rem; transition: color 0.2s; }
+.back-link:hover { color: var(--green); }
+
+.author-card { display: flex; align-items: center; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--cream-dark); border-bottom: 1px solid var(--cream-dark); margin: 3rem 0; }
+.author-card img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid var(--green-light); }
+.author-card .author-info h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+.author-card .author-info p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+.post-cta-box { background: var(--green-light); border-radius: 20px; padding: 2.5rem; text-align: center; margin: 3rem 0; }
+.post-cta-box h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+.post-cta-box p { color: var(--muted); margin-bottom: 1.5rem; }
+
+@media (max-width: 992px) {
+  .post-layout { grid-template-columns: 1fr; }
+  .post-sidebar { position: static; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar scrolled">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">F5 <em>Hormone</em></a>
+    <div class="nav-links">
+      <a href="index.html#pillars">Phương pháp</a>
+      <a href="ngoc-anh/index.html">Ngọc Anh</a>
+      <a href="lam-viec-cung-minh/index.html">Làm việc cùng mình</a>
+      <a href="kien-thuc/index.html">Kiến thức</a>
+      <a href="index.html#quiz" class="btn-nav">Làm Hormone Quiz →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- POST HERO -->
+<header class="post-hero">
+  <div class="container">
+    <div class="post-hero-inner">
+      <span class="section-label" id="postCat">Nội tiết</span>
+      <h1 id="postTitle">Đang tải bài viết...</h1>
+      <div class="post-hero-meta">
+        <span><i class="fas fa-calendar-alt"></i> <span id="postDate">--</span></span>
+        <span><i class="fas fa-user"></i> Ngọc Anh Coach</span>
+        <span><i class="fas fa-clock"></i> <span id="readTime">-- phút đọc</span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+  <div class="post-layout">
+    <article class="post-content" id="postContent">
+      <!-- loaded by JS -->
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-widget">
+        <h3>Làm Hormone Quiz ngay</h3>
+        <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem">3 phút để biết hormone nào đang mất cân bằng.</p>
+        <a href="index.html#quiz" class="btn-primary" style="font-size:0.85rem;padding:0.65rem 1.25rem;display:block;text-align:center">Làm Quiz →</a>
+      </div>
+      <div class="sidebar-widget">
+        <h3>Đặt lịch tư vấn</h3>
+        <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem">Gặp trực tiếp Ngọc Anh để được đồng hành cá nhân.</p>
+        <a href="https://calendly.com/ngocanhcici" target="_blank" class="btn-primary" style="font-size:0.85rem;padding:0.65rem 1.25rem;display:block;text-align:center">Đặt lịch →</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2026 F5 Hormone by Ngọc Anh Coach. All rights reserved.</p>
+      <div style="margin-top:1rem;display:flex;justify-content:center;gap:2rem;opacity:0.6;font-size:0.85rem">
+        <a href="index.html">Trang chủ</a>
+        <a href="kien-thuc/index.html">Kiến thức</a>
+        <a href="chinh-sach-bao-mat.html">Bảo mật</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const CATS = { hormone:'Nội tiết & Hormone', nutrition:'Dinh dưỡng', sleep:'Giấc ngủ', movement:'Vận động', mindset:'Tâm trí', cycle:'Chu kỳ kinh nguyệt' };
+
+  const demoData = {
+    'demo1': {
+      title: 'Cortisol và Progesterone: Tại sao stress khiến chu kỳ rối loạn?',
+      content: `<p>Khi cơ thể ở trạng thái <strong>stress mãn tính</strong>, Cortisol tăng cao liên tục. Vấn đề là cả Cortisol lẫn Progesterone đều được tổng hợp từ cùng một "nguyên liệu thô" là <strong>Pregnenolone</strong>.</p>
+<h2>Hiện tượng "Đánh cắp Pregnenolone"</h2>
+<p>Khi cơ thể ưu tiên sản xuất Cortisol để đối phó với stress, nguồn Pregnenolone bị "đánh cắp" để làm Cortisol - khiến Progesterone thiếu hụt. Đây được gọi là <em>Pregnenolone Steal</em> hay <em>Cortisol Steal</em>.</p>
+<blockquote>Cơ thể bạn không "lười" sản xuất Progesterone. Nó đang dùng mọi nguồn lực để giữ bạn sống trong trạng thái stress. Đó là bản năng sinh tồn - không phải lỗi của bạn.</blockquote>
+<h2>Dấu hiệu Progesterone thấp do stress</h2>
+<ul>
+<li>Chu kỳ ngắn hơn bình thường (dưới 24 ngày)</li>
+<li>PMS nặng: cáu kỉnh, khóc không rõ lý do</li>
+<li>Khó ngủ, đặc biệt 1-2 tuần trước kỳ kinh</li>
+<li>Kinh nguyệt ra nhiều hoặc kéo dài</li>
+<li>Lo âu tăng cao vào pha Luteal (sau ngày rụng trứng)</li>
+</ul>
+<h2>Điều chỉnh Cortisol để phục hồi Progesterone</h2>
+<p>Không có cách nào tăng Progesterone mà bỏ qua Cortisol. Đây là thứ tự ưu tiên:</p>
+<ol>
+<li><strong>Ngủ trước 23h</strong> - Cortisol cao nhất vào ban đêm khi bạn thức khuya</li>
+<li><strong>Tập vận động nhẹ</strong> - Yoga, đi bộ 30 phút. Tránh HIIT trong pha Luteal</li>
+<li><strong>Ăn đủ carbohydrate phức hợp</strong> - Nhịn ăn kiêng khem quá mức là stressor với cơ thể</li>
+<li><strong>Thực hành thở chậm</strong> - Kích hoạt hệ thần kinh phó giao cảm, giảm Cortisol ngay lập tức</li>
+</ol>`,
+      category: 'hormone', date: '2026-05-14'
+    },
+    'demo2': {
+      title: 'Seed Cycling là gì? Cách hạt giống hỗ trợ hormone theo từng pha chu kỳ',
+      content: `<p><strong>Seed Cycling</strong> là phương pháp dùng các loại hạt giống khác nhau theo 2 pha của chu kỳ kinh nguyệt để hỗ trợ cân bằng hormone Estrogen và Progesterone một cách tự nhiên.</p>
+<h2>2 pha và 4 loại hạt</h2>
+<p>Chu kỳ kinh nguyệt chia làm 2 pha chính. Mỗi pha cần một nhóm hạt giống khác nhau.</p>
+<h3>Pha Follicular (Ngày 1–14): Hỗ trợ Estrogen</h3>
+<ul>
+<li><strong>Hạt lanh (Flaxseed)</strong> - 1 muỗng canh/ngày, xay thô. Chứa Lignans, giúp điều hòa Estrogen không bị dư thừa</li>
+<li><strong>Hạt bí ngô (Pumpkin seeds)</strong> - 1 muỗng canh/ngày. Giàu Zinc, hỗ trợ sản xuất Estrogen</li>
+</ul>
+<h3>Pha Luteal (Ngày 15–28): Hỗ trợ Progesterone</h3>
+<ul>
+<li><strong>Hạt mè (Sesame)</strong> - 1 muỗng canh/ngày. Lignans giúp Progesterone ổn định</li>
+<li><strong>Hạt hướng dương (Sunflower)</strong> - 1 muỗng canh/ngày. Giàu Vitamin E và Selenium</li>
+</ul>
+<blockquote>Seed Cycling không phải phép màu qua đêm. Cần ít nhất 3 chu kỳ (3 tháng) để thấy sự khác biệt. Nhưng nếu kiên trì, đây là một trong những can thiệp dinh dưỡng nhẹ nhàng và bền vững nhất.</blockquote>`,
+      category: 'nutrition', date: '2026-05-10'
+    },
+    'demo3': {
+      title: 'Tại sao ngủ đủ 8 tiếng vẫn thấy mệt? Câu trả lời nằm ở Cortisol sáng',
+      content: `<p><strong>Cortisol Awakening Response (CAR)</strong> là hiện tượng Cortisol tăng vọt trong 30-45 phút đầu sau khi thức dậy. Đây là tín hiệu bình thường, giúp bạn tỉnh táo và sẵn sàng cho ngày mới.</p>
+<h2>Khi CAR bị rối loạn</h2>
+<p>Nếu CAR của bạn bị rối loạn - tức là Cortisol không tăng đủ mạnh vào buổi sáng - bạn sẽ:</p>
+<ul>
+<li>Thức dậy trong trạng thái mệt mỏi, "não sương mù" (brain fog)</li>
+<li>Cần cà phê ngay lập tức để cảm thấy tỉnh táo</li>
+<li>Không thể vào guồng làm việc trước 10h sáng</li>
+<li>Buổi chiều lại cảm thấy tỉnh táo và năng lượng hơn buổi sáng</li>
+</ul>
+<h2>Cách phục hồi CAR tự nhiên</h2>
+<ol>
+<li><strong>Ngủ và thức dậy đúng giờ</strong> - Thậm chí cuối tuần. Đây là yếu tố quan trọng nhất.</li>
+<li><strong>Ra nắng trong 30 phút đầu sau khi thức</strong> - Ánh sáng tự nhiên là tín hiệu mạnh nhất để "đặt lại" đồng hồ sinh học</li>
+<li><strong>Không dùng điện thoại ngay khi thức dậy</strong> - Tin tức và mạng xã hội kích hoạt phản ứng stress ngay từ đầu ngày</li>
+<li><strong>Ăn sáng có protein</strong> - Trứng, đậu phụ, sữa chua - giúp Cortisol hạ từ từ sau khi đạt đỉnh</li>
+</ol>`,
+      category: 'sleep', date: '2026-05-06'
+    }
+  };
+
+  function loadPost() {
+    const id = new URLSearchParams(window.location.search).get('id');
+    if (!id) { window.location.href = 'kien-thuc/index.html'; return; }
+
+    const savedPosts = JSON.parse(localStorage.getItem('f5_posts') || '[]');
+    const post = savedPosts.find(p => p.id === id) || demoData[id];
+
+    if (!post) { window.location.href = 'kien-thuc/index.html'; return; }
+
+    document.title = post.title + ' - F5 Hormone';
+    document.getElementById('docDesc').setAttribute('content', post.metaDesc || post.contentText?.substring(0, 155) || '');
+    document.getElementById('postTitle').textContent = post.title;
+    document.getElementById('postCat').textContent = CATS[post.category] || post.category;
+    document.getElementById('postDate').textContent = formatDate(post.date);
+
+    const wordCount = (post.contentText || post.content?.replace(/<[^>]*>/g,'')||'').split(/\s+/).length;
+    document.getElementById('readTime').textContent = Math.max(2, Math.ceil(wordCount / 200)) + ' phút đọc';
+
+    const contentEl = document.getElementById('postContent');
+    contentEl.innerHTML = `
+      <a href="kien-thuc/index.html" class="back-link"><i class="fas fa-arrow-left"></i> Quay lại Kiến thức</a>
+      ${post.content || '<p>' + (post.contentText || '') + '</p>'}
+      <div class="author-card">
+        <img src="story-visual.jpg" alt="Ngọc Anh Coach">
+        <div class="author-info">
+          <h4>Ngọc Anh Coach</h4>
+          <p>IIN Certified Hormone Health Coach · Sivananda Yoga</p>
+        </div>
+      </div>
+      <div class="post-cta-box">
+        <h3>Bạn nhận ra mình trong bài viết này?</h3>
+        <p>Làm Hormone Quiz để biết chính xác hormone nào đang mất cân bằng - và bước đầu tiên cần làm gì.</p>
+        <a href="index.html#quiz" class="btn-primary">Làm Hormone Quiz miễn phí →</a>
+      </div>
+    `;
+  }
+
+  function formatDate(d) {
+    if (!d) return '';
+    return new Date(d).toLocaleDateString('vi-VN', { day:'2-digit', month: 'long', year:'numeric' });
+  }
+
+  loadPost();
+</script>
+
+</body>
+</html>
